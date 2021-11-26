@@ -1,0 +1,13 @@
+{
+  "signUp": "Sign up",
+  "signUpGoogle": "Sign up with google",
+  "or": "OR",
+  "signUpEmail": "Sign up with email",
+  "emailLabel": "Email Address",
+  "firstNameLabel": "First name",
+  "lastNameLabel": "Last name",
+  "password": "Password",
+  "passwordConfirmation": "Password confirmation",
+  "tosLabel": "I've read and I accept the terms and conditions",
+  "alreadyAccount": "Already have an account?  Let's sign in!"
+}

@@ -1,0 +1,13 @@
+{
+  "signUp": "Registro",
+  "signUpGoogle": "Registrarme con google",
+  "or": "O",
+  "signUpEmail": "Registrarme con email",
+  "emailLabel": "Dirección de email",
+  "firstNameLabel": "Nombre",
+  "lastNameLabel": "Apellidos",
+  "password": "Contraseña",
+  "passwordConfirmation": "Confirmacion de Contraseña",
+  "tosLabel": "He leido y acepto los terminso y condiciones",
+  "alreadyAccount": "Ya tienes cuenta?  Ingresa aquí."
+}

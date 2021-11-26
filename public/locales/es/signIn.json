@@ -1,0 +1,10 @@
+{
+  "signIn": "Login",
+  "signInGoogle": "Acceder con google",
+  "or": "O",
+  "signEmail": "Acceder con email",
+  "emailLabel": "Dirección de email",
+  "password": "Contraseña",
+  "forgotPassword": "Perdiste tu contraseña?",
+  "alreadyAccount": "Aún no tienes cuenta?  Crea tu cuenta aquí"
+}

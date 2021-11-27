@@ -54,6 +54,10 @@ body{
     border-radius: 5px;
 
 }
+
+
+
+
 h1{
     font-size: 35px;
 }
@@ -70,6 +74,12 @@ h4  {
     text-align: center;
     font-weight: 300;
 }
+
+p{
+    margin-bottom: 5px;
+}
+
+
 
 .button-primary {
 
@@ -125,4 +135,46 @@ button, html [type="button"], [type="reset"], [type="submit"] {
     border: 1px solid #008AA7;
     width: 180px;
     color: white;
+}
+
+
+
+
+.section-demo{
+    display: flex;
+    justify-content: end;
+    background-image: url('images/banner_sonido.png');
+    background-size: cover;
+}
+
+.section-selector{
+    width: 45%;
+    background-color: #2C3039;
+    margin-right: 10%;
+    margin-top: 50px ;
+
+}
+
+.container-demo {
+    margin: 1.3em;
+}
+
+
+select{
+
+    width: 50%;
+    margin-bottom: 10px;
+    background-color: #373941;
+    color: white;
+}
+
+textarea{
+    font-size: 20px;
+    line-height: 90px;
+    width: 90%;
+    background-color: #373941;
+    color: white;
+    margin-bottom: 20px;
+
+   
 }

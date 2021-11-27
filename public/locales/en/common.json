@@ -1,3 +1,19 @@
 {
-  "test": "testing"
+  "test": "testing",
+  "mainTitle": "Transform any text in a 100% human voice instantly",
+  "buttonTest" : "Free trial",
+  "emailTest" : "Introduce your email",
+  "bodyTitle" : " ¿Are you tired of wait days to get an off voice in you video?",
+  "bodySubtitle" : " Find in Vocesia in justy three clicks",
+  "copyPasteTTS" : "Copy and paste your text in our TTS",
+  "selectVoiceLanguage" : "Select your preferred voice and language",
+  "downloadFile" : "Download your audio file ready to use",
+  "tryText": "Free trial",
+  "unlimited": "Unlimited for all",
+  "month": "/month",
+  "preOrder": "Pre order now",
+  "notConvinced": "Still not convinced on buying?",
+  "getInTouch": "Get in touch",
+  "language": "Language",
+  "getBenefit": "What you will get"
 }

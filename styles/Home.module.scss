@@ -1,1 +1,111 @@
 @import url('./scss/style.scss');
+
+
+body{
+  font-family: montserrat, serif;
+}
+
+
+.container {
+  max-width: 1306px;
+}
+
+.site-header::before {
+  content: '';
+  position: absolute;
+  top: -204px;
+  left: 0;
+  width: 100%;
+  height: 700px;
+  background: #242830;
+  background: linear-gradient(
+                  80deg, rgba(36,40,48,0.5) 0%, rgba(36,40,48,0) 100%);
+  -webkit-transform-origin: 0;
+  transform-origin: 0;
+  -webkit-transform: skewY(
+                  -12deg);
+  transform: skewY(
+                  0deg);
+  background-image: url(../images/banner.png);
+}
+
+.site-header::after {
+  content: '';
+  position: absolute;
+  top: -204px;
+  left: 0;
+  width: 100%;
+  height: 700px;
+  background: #242830;
+  background: linear-gradient(
+                  180deg, rgb(14 14 14 / 0%) 0%, #1d1f24 100%);
+}
+
+
+h1{
+  font-size: 35px;
+}
+
+
+h3  {
+
+  text-align: center;
+
+}
+
+h4  {
+
+  text-align: center;
+  font-weight: 300;
+}
+
+.button-primary {
+
+  background: linear-gradient(
+                  65deg, #008AA7 0, #008AA7 100%);
+}
+
+.button-primary:hover {
+
+  background: linear-gradient(
+                  65deg, #2D296A 0, #2D296A 100%);
+}
+
+.features-wrap:first-of-type {
+  margin-top: 36px;
+}
+
+.hero-copy {
+  padding-right: 64px;
+  min-width: 700px;
+  width: 567px;
+}
+
+.hero-title{
+  margin-top: 30px
+}
+
+
+
+.hero-cta {
+  margin: 0;
+  margin-top: 30px;
+
+}
+
+
+input {
+  font-size: 20px;
+  line-height: 30px;
+  width: 376px;
+  height: 48px;
+}
+
+button, html [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button;
+  background-color: #008AA7;
+  border: 1px solid #008AA7;
+  width: 180px;
+  color: white;
+}
+

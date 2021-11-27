@@ -24,6 +24,38 @@ import Link from "next/link";
 const Home = () => {
     const { t } = useTranslation('common')
     const inputValue = t('buttonTest') ?? 'Try for free'
+    const [textToSpeech, setTextToSpeech] = useState(String);
+
+    async function clickPlay() {
+    
+     try {
+        await fetch(
+          `https://docker.vocesia.es/api/tts?text=${encodeURI(textToSpeech)}`
+        ).then(res => res.blob() )
+          .then( blob => {
+           var url = window.URL.createObjectURL(blob);
+            var a = document.createElement('a');
+            a.href = url;
+            a.download = "mi_audio.wav";
+            document.body.appendChild(a); // we need to append the element to the dom -> otherwise it will not work in firefox
+            a.click();    
+            a.remove();
+          });
+      } catch (e) {
+        /**
+         * We'll get to this block if:
+         * - Response was NOT OK.
+         * - We couldn't complete the request
+         *
+         * We should log whatever is coming from `e` to our
+         * reporting/alerting system (see Sentry.io)
+         */
+        console.log("...logging error to our system...");
+        throw e;
+      }
+}
+
+
     return (
         <>
             <Layout>
@@ -97,11 +129,11 @@ const Home = () => {
                             </select>
 
                             <p className="section-texto">Escribe aquí tu texto</p>
-                            <textarea id="w3review" name="texto" placeholder="Escribe aquí el texto...">
+                            <textarea id="w3review" value={textToSpeech} onChange={(e) => setTextToSpeech(e.target.value)} placeholder="Escribe aquí el texto...">
                             
                             </textarea>
                             <div className="hero-cta">
-                                    <a className="button button-primary" href="#">
+                                    <a className="button button-primary" onClick={() => clickPlay()}>
                                        ▶ {t('playText')}
                                     </a></div>
                         </section>

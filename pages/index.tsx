@@ -117,33 +117,75 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
-        
+
+
+                <h3 className="tituloVoicy mt-0">{t('TitleVoisy')}</h3>
+                <section className="section-filtros">
+                    <section className="section-sel">
+                        <section className="container-filtros">
+
+                            <select name="filtro" id="filtro">
+                                <option value="spanish">Español</option>
+                                <option value="english">Inglés</option>  
+                            </select>
+                            
+
+                            <select name="filtro" id="filtro">
+                                <option value="spanish">Latino</option>
+                                <option value="english">Andaluz</option> 
+                                <option value="english">Gallego</option>  
+                            </select>
+
+                            <select name="filtro" id="filtro">
+                                <option value="spanish">Femenino</option>
+                                <option value="english">Masculino</option>  
+                            </select>
+
+                            <select name="filtro" id="filtro">
+                                <option value="spanish">Alegre</option>
+                                <option value="english">Triste</option>
+                                <option value="english">Sorprendido</option> 
+                                <option value="english">Enfadado</option>
+                                <option value="english">Miedo</option>   
+                                  
+                            </select>
+
+                            <select name="filtro" id="filtro">
+                                <option value="spanish">Retail</option>
+                                <option value="english">Publicidad</option>
+                                <option value="english">Cine</option>
+                            </select>
+
+                            <select name="filtro" id="filtro">
+                                <option value="spanish">Adulto</option>
+                                <option value="english">Niños/as</option>
+                                <option value="english">Ancianos/as</option>   
+                            </select>
+                        </section>
+                    </section>
+                </section>
+
+
                 <section className="section-demo">
                     <section className="section-selector">
                         <section className="container-demo">
                             <p className="section-idioma">Idioma</p>
                             <select name="cars" id="cars">
                                 <option value="volvo">Español</option>
-                                <option value="saab">Inglés</option>
-                                
+                                <option value="saab">Inglés</option> 
                             </select>
-
                             <p className="section-texto">Escribe aquí tu texto</p>
                             <textarea id="w3review" value={textToSpeech} onChange={(e) => setTextToSpeech(e.target.value)} placeholder="Escribe aquí el texto...">
-                            
+
                             </textarea>
                             <div className="hero-cta">
                                     <a className="button button-primary" onClick={() => clickPlay()}>
                                        ▶ {t('playText')}
                                     </a></div>
                         </section>
-                        
-                        
-
                     </section>
-
-
                 </section>
+
                 <section className="pricing section">
                     <div className="container-sm">
                         <div className="pricing-inner section-inner">

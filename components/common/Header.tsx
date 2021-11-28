@@ -31,7 +31,7 @@ const Header = ({className = ''}) => {
                     </div>
                 </div>
                 <div style={{position: "absolute", zIndex: 100, top: 0, right: '2em', color: "white",  textAlign: "center"}}>
-                    <h6>{t('language')}</h6>
+                    
                     <div style={{marginTop: '0.5em'}}>
                         {options}
                     </ div>

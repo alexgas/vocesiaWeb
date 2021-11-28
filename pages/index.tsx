@@ -119,7 +119,7 @@ const Home = () => {
                 </section>
 
 
-                <h3 className="tituloVoicy mt-0">{t('TitleVoisy')}</h3>
+                <h3 className="TitleVoisy mt-0">{t('TitleVoisy')}</h3>
                 <section className="section-filtros">
                     <section className="section-sel">
                         <section className="container-filtros">

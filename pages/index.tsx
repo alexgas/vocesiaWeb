@@ -32,7 +32,7 @@ const Home = () => {
         await fetch(
           `https://docker.vocesia.es/api/tts?text=${encodeURI(textToSpeech)}`, {
             headers: {
-              'Access-Control-Allow-Origin': *
+              'Access-Control-Allow-Origin': '*'
             },
             referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
           }

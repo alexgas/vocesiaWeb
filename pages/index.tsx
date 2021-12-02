@@ -30,7 +30,7 @@ const Home = () => {
     
      try {
         await fetch(
-          `https://docker.vocesia.es/api/tts?text=${encodeURI(textToSpeech)}`, {
+          `https://dockervocesia.sevisl.com/api/tts?text=${encodeURI(textToSpeech)}`, {
             headers: {
               'Access-Control-Allow-Origin': '*'
             },
